@@ -1,0 +1,27 @@
+@servidor = http://localhost:3000
+
+### máximo
+
+GET {{servidor}}/util/numbers/maximum/?input=10,1,100 HTTP/1.1
+
+### mínimo
+
+GET {{servidor}}/util/numbers/minimum/?input=10,1,100 HTTP/1.1
+
+### minúsculo
+
+POST {{servidor}}/util/string/lowercase HTTP/1.1
+Content-Type: application/json
+
+{
+  "input": "Lorem Ipsum"
+}
+
+### maiúsculo
+
+POST {{servidor}}/util/string/uppercase HTTP/1.1
+Content-Type: application/json
+
+{
+  "input": "Lorem Ipsum"
+}
